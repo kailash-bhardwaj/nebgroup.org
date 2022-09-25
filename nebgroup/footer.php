@@ -17,34 +17,8 @@
 
 			<footer id="site-footer" role="contentinfo" class="header-footer-group">
 				<div class="footer-top container">
-						<!-- <?php dynamic_sidebar( 'sidebar-1' ); ?> -->
-						<div class="dflex justibetween">
-							<div class="footercol">
-								<h4>Questions or Concernts?</h4>
-						<p>Need help selecting a product or finding? 
-Send us a message! <br>
-Email - billing@nebgroupofaz.com
-				</p>	
-							</div>
-							<div class="footercol">
-								<h4>NEB GROUP OF ARIZONA</h4>
-						<p>8261 E Evans Rd #102, Scottsdale, AZ 85260
-Phone: (480)595-7272 Billing Phone: (480)535-6933
-Fax: (866)561-8331 Email: billing@nebgroupofaz.com
-				</p>
-							</div>
-							<div class="footercol">
-								<h4>
-					Accredited by The Compliance Team
-				</h4>
-				<p>
-					Exemplary Provider
-				</p>
-							</div>
-						</div>
-						
-					
-				
+					<?php dynamic_sidebar( 'sidebar-1' ); ?>
+
 				</div>
 				</div><!-- .section-inner -->
 				<div class="footercopyright">

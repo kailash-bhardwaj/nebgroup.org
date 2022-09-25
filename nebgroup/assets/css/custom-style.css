@@ -438,6 +438,9 @@ body:not(.overlay-header) .primary-menu ul a {
     flex-wrap: wrap;
   
 }
+.justicenter{
+    justify-content:center;
+}
 .justibetween{
     justify-content: space-between;
 }
@@ -1401,8 +1404,64 @@ section.services .slick-dots li button {
 .wpsm_panel {
     text-align: left;
 }
+.padding8040{
+    padding: 100px 0 0px 0;
+}
+.container-small{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px
+}
+input.wpcf7-form-control.has-spinner.wpcf7-submit {
+    color: #fff;
+    background: #871710;
+    text-transform: uppercase;
+    border-radius: 55px;
+}
 
-section.bg-white h3 {
+input.wpcf7-form-control.has-spinner.wpcf7-submit:hover {
+    background-color: #333333;
+}
+.productBox {
+    border: 1px solid #d2d2d2;
+    padding: 20px;
+    width: 260px;
+    height: 260px;
+    position: relative;
+    margin: 15px 15px 30px 15px;
+        display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-wrap {
+    box-shadow: 0px 0px 20px rgb(0 0 0 / 28%);
+    padding: 50px;
+    border-radius: 10px;
+    margin: 50px auto;
+    max-width: 850px;
+}
+.padding8050{
+    padding: 100px 0 50px
+}
+.productBox h2 {
+    position: absolute;
+    bottom: -22px;
+    background-color: #871710;
+    color: #fff !important;
+    font-size: 12px !important;
+    font-weight: normal !important;
+    border-radius: 55px;
+    padding: 15px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    max-width: 85%;
+}
+
+.productBox:hover h2 {
+    background-color: #000;
+}
+section.bg-white h3, section.bg-white h2 {
     font-weight: bold;
     color: #871710;
     font-size: 32px;
@@ -1410,6 +1469,16 @@ section.bg-white h3 {
 .wpsm_panel-group {
     max-width: 800px;
     margin: 0 auto;
+}
+p {
+    color: #6c6c6c;
+}
+
+p a {
+    color: #871710;
+}
+#wpsm_accordion_1513 .ac_title_class {
+    font-size: 16px;
 }
 /********************Responsive start**************************/
 
@@ -1510,13 +1579,8 @@ section.bg-white h3 {
         font-size: 15px;
     }
 
-    .primary-menu>li {
-        padding: 20px 15px;
-    }
 
-    header#site-header.headerFixed .primary-menu>li {
-        padding: 40px 15px;
-    }
+
 
     .slick-prev:before,
     .slick-next:before {

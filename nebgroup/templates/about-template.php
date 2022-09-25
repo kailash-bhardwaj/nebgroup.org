@@ -12,7 +12,7 @@ get_header();
 	<?php
 		get_template_part('template-parts/inner-banner');
 	?>
-<section class="service_section_wrap"> 
+<section class="bg-white padding8050"> 
 		<div class="container">
 			<div class=" text-center">
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post();
