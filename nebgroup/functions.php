@@ -859,45 +859,35 @@ function reviews(){
 
 
 
-add_shortcode("projectShortcode","project");
-function project(){
+add_shortcode("products","products");
+function products(){
 	$args= array(
-		"post_type"=>"projects",
+		"post_type"=>"products",
 		"post_status"=>"publish",
 		"posts_per_page"=> -1,
 		'order' => 'ASC',
 	);
 	ob_start();
 	?>
-		<div class="project-slider">
+	<div class="dflex justicenter">
 			<?php
 			// The Query
 			query_posts( $args );
 			while ( have_posts() ) : the_post();
 				?>
-				<div class="div">
-					<div class="project-wrap">
-						<div class="img-wrap">
-							<?php 
-							$image = get_field('project_image');
-							if( !empty( $image ) ): ?>
-								<img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-							<?php endif; ?>
-						</div>
-						<div class="project-content">
-							<h2 class="project-title"><?php the_title(); ?></h2>
-							<div class="info entry-content pt-4">
-								<?php the_field('project_description'); ?>
-							</div>
-							<a class="read-more" href="/services/">Read More <img src="/wp-content/themes/uucon/assets/images/angles-right-solid.svg"></a>
-						</div>	
-					</div>
-				</div>
+		<div class="productBox">
+	<a href="<?php echo get_field('product_link'); ?>" target="_blank">
+		<?php the_post_thumbnail('post-thumbnail', ['class' => 'img-responsive responsive--full', 'title' => 'Feature image']); ?>
+	<h2><?php the_title() ?></h2>
+	</a>
+	</div>
 
 			<?php endwhile;
 			wp_reset_query();
 			?>
-		</div>
+			</div>
+
+		
 	<?php
 	return ob_get_clean();
 }

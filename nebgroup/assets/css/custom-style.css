@@ -657,7 +657,13 @@ a.btn-link:hover {
 
 
 /********top header start********/
-
+.payment_box.payment_method_authorizenet_lightweight {
+    box-shadow: 0px 0px 20px rgb(0 0 0 / 28%);
+    padding: 50px;
+    border-radius: 10px;
+    margin: 50px auto !important;
+    max-width: 850px;
+}
 .top-header {
     background: #444;
     padding: 10px 0px;
@@ -668,7 +674,7 @@ a.btn-link:hover {
     margin-left: 25px;
 }
 
-.primary-menu li.current-menu-item:before {
+.primary-menu li:not(:last-child).current-menu-item:before {
     width: 100%;
     height: 3px;
     content: "";
