@@ -28,7 +28,7 @@ get_header();
                 ?>
 
 <div class="productBox">
-	<a href="<?php the_permalink(); ?>">
+	<a href="<?php echo get_field('product_link'); ?>" target="_blank">
 		<?php the_post_thumbnail('post-thumbnail', ['class' => 'img-responsive responsive--full', 'title' => 'Feature image']); ?>
 	<h2><?php the_title() ?></h2>
 	</a>
