@@ -657,7 +657,13 @@ a.btn-link:hover {
 
 
 /********top header start********/
-
+.payment_box.payment_method_authorizenet_lightweight {
+    box-shadow: 0px 0px 20px rgb(0 0 0 / 28%);
+    padding: 50px;
+    border-radius: 10px;
+    margin: 50px auto !important;
+    max-width: 850px;
+}
 .top-header {
     background: #444;
     padding: 10px 0px;
@@ -668,7 +674,7 @@ a.btn-link:hover {
     margin-left: 25px;
 }
 
-.primary-menu li.current-menu-item:before {
+.primary-menu li:not(:last-child).current-menu-item:before {
     width: 100%;
     height: 3px;
     content: "";
@@ -1224,7 +1230,7 @@ video#video {
 }
 
 .footer-top .widget-content img {
-    margin: 0 auto;
+    max-width: 180px;
 }
 
 .footer-top ul li {
@@ -1405,7 +1411,7 @@ section.services .slick-dots li button {
     text-align: left;
 }
 .padding8040{
-    padding: 100px 0 0px 0;
+    padding: 60px 0 0px 0;
 }
 .container-small{
     max-width: 800px;
@@ -1417,6 +1423,7 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit {
     background: #871710;
     text-transform: uppercase;
     border-radius: 55px;
+    white-space: break-spaces;
 }
 
 input.wpcf7-form-control.has-spinner.wpcf7-submit:hover {
@@ -1440,9 +1447,7 @@ input.wpcf7-form-control.has-spinner.wpcf7-submit:hover {
     margin: 50px auto;
     max-width: 850px;
 }
-.padding8050{
-    padding: 100px 0 50px
-}
+
 .productBox h2 {
     position: absolute;
     bottom: -22px;
@@ -1666,13 +1671,13 @@ p a {
 
     nav.mobile-menu li.current-menu-item a,
     header#site-header ul li.current-menu-item a {
-        color: #f1770d;
+        color: #871710;
         text-decoration: none !important;
     }
 
     nav.mobile-menu li a {
         padding: 15px 0px !important;
-        color: #454d62;
+        color: #000;
         font-weight: 500 !important;
         font-size: 18px !important;
     }
@@ -1682,12 +1687,18 @@ p a {
     }
 
     .header-inner.section-inner.container {
-        padding: 30px 15px;
+        padding:10px 15px;
     }
 
     .headerFixed .header-inner.section-inner.container {
-        padding: 20px 15px;
+        padding: 10px 15px;
     }
+    .padding8040 {
+    padding: 0px 0 0px 0;
+}
+.bg-white {
+    padding: 0;
+}
 }
 
 @media (max-width: 991.98px) {
@@ -1730,6 +1741,13 @@ p a {
 }
 
 @media (max-width: 767.98px) {
+    .footercol {
+    width: 1003%;
+}
+.contact-wrap {
+    padding: 20px;
+    width: 90%;
+}
     .site-title a {
         font-size: 22;
     }
